@@ -5,7 +5,6 @@ const nextConfig = {
     reactStrictMode: true,
     output: 'export',
     basePath: basePath,
-    assetPrefix: isProd ? '/shalini/' : '',
     env: {
         NEXT_PUBLIC_BASE_PATH: basePath,
     },
