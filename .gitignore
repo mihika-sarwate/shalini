@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+dist
+.env
+.env.local
+.DS_Store
+coverage
+.vscode
+.idea
+
+# Sanity
+studio
+.sanity
+sanity.cli.js
+sanity.config.js
