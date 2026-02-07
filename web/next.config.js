@@ -1,9 +1,10 @@
-/** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
     reactStrictMode: true,
     output: 'export',
-    basePath: '/shalini', // Repository name
-    assetPrefix: '/shalini/', // Ensure assets load correctly
+    basePath: isProd ? '/shalini' : '',
+    assetPrefix: isProd ? '/shalini/' : '',
     images: {
         unoptimized: true,
     },
